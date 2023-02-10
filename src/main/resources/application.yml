@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    hikari:
+      auto-commit: false
+  jpa:
+    properties:
+      hibernate:
+        connection:
+          provider_disables_autocommit: true
+    open-in-view: false
+
