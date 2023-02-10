@@ -16,7 +16,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Transactional(readOnly = true, noRollbackFor = Exception.class)
 @Documented
-public @interface ReadTestTransactional {
+public @interface ReadTransactional {
 
     @AliasFor(annotation = Transactional.class, attribute = "value")
     String value() default "";
