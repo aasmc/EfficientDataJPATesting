@@ -10,12 +10,8 @@ import ru.aasmc.efficientdatajpatesting.repository.RobotRepository;
 
 @Service
 public class RobotRestrictions {
-    private final RobotRepository robotRepository;
-
     @Autowired
-    public RobotRestrictions(RobotRepository robotRepository) {
-        this.robotRepository = robotRepository;
-    }
+    private RobotRepository robotRepository;
 
     @Transactional(readOnly = true)
     public void checkSwitchOn(Long serverId) {

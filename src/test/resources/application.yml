@@ -1,0 +1,10 @@
+spring:
+  flyway:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+logging:
+  level:
+    org.springframework.orm.jpa.TransactionManager: DEBUG

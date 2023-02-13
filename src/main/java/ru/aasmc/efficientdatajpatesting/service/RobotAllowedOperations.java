@@ -45,7 +45,7 @@ public class RobotAllowedOperations {
     }
 
     @Transactional(readOnly = true)
-    public Map<Long, OperationStatus> getRobotSwitchOStatusNoRollbackFor(
+    public Map<Long, OperationStatus> getRobotSwitchOnStatusNoRollbackFor(
             Collection<Long> robotIds
     ) {
         return innerGetRobotsSwitchOnStatus(
